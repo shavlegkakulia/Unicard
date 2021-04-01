@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_reward_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="TextView"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_preview_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="TextView"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/text_reward_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_card" />
+
+        <LinearLayout
+            android:layout_width="328dp"
+            android:layout_height="4dp"
+            android:orientation="vertical"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/image_url"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/text_reward_name"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:text="name"/>
+
+                <TextView
+                    android:id="@+id/text_reward_validity"
+                    android:layout_weight="1"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="validity"/>
+
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="text"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_reward_realize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="@color/_FFFFFF"
+            android:text="გაცემა"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:text="უკან დაბრუნება"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

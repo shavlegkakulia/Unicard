@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ge.unicard.pos.ui.widgets.PrinterLayout
+        android:id="@+id/printer_view_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:minWidth="300dp"
+                android:layout_height="6px" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                style="@style/PrintLayout.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/reconcilatation"
+                android:gravity="center_horizontal"
+                tools:text="RECONCILATATION" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                style="@style/PrintLayout.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/merchant_name_report"
+                android:gravity="center_horizontal"
+                tools:text="Merchant name" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                style="@style/PrintLayout.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/address"
+                android:lines="2"
+                android:maxLines="3"
+                android:gravity="center_horizontal"
+                tools:text="address" />
+
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Date" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/datetime_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="12/12/2012 16:12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Merchant ID" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/merchant_id_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="123123123" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Device ID" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/device_id_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="123123123" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Terminal ID" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/terminal_id_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="9494" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Batch ID:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/batch_id_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="" />
+
+            </LinearLayout>
+
+         <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Batch ID" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/batch_id_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="1111111" />
+
+            </LinearLayout> -->
+
+        <!--    <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/tran_type"
+                style="@style/PrintLayout.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="Tran Type" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/status"
+                style="@style/PrintLayout.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/_000000"
+                android:gravity="end"
+                android:paddingStart="15dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/_FFFFFF"
+                android:textStyle="bold"
+                tools:text="Status" /> -->
+        <LinearLayout
+            android:id="@+id/unicard_bonus_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_paid"
+                    android:gravity="start"
+                    android:text="Unicard Bonus Accomulation:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Transaction count:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/bonus_accomulated_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="23" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/bonus_accomulated_amount_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="456.67" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Reversed count:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/reversed_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/reversed_amount_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="35.04" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/unicard_payment_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Unicard payment:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Transaction count:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/make_payment_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="9" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount:"
+                    android:weightSum="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/amount__make_payment_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="200.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Transaction reversed" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/transaction_reversed_make_payment_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/reversed_amount_make_payment_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="120.66" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/giftcard_purchase_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Gift Card:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Transaction count:" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/gift_card_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="19" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount:"
+                    android:weightSum="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/transaction_gift_card_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="1200.1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Transaction reversed" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/transaction_reversed_gift_card_count_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Amount" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ge.unicard.pos.ui.widgets.CTextView
+                    android:id="@+id/reversed_gift_card_report"
+                    style="@style/PrintLayout.Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:text="120.66" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                style="@style/PrintLayout.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/print_layout_footer"
+                tools:text="@string/print_layout_footer" />
+
+            <TextView
+                style="@style/PrintLayout.DashedDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ge.unicard.pos.ui.widgets.PrinterLayout>
+
+</FrameLayout>

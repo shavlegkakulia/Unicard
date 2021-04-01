@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/_FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="41dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp">
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            style="@style/MessageDialog.Title"
+            android:id="@+id/message_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/error_message_dialog_title" />
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            android:id="@+id/message_view"
+            style="@style/MessageDialog.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:text="შეტყობინება" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ge.unicard.pos.ui.widgets.CButton
+            android:id="@+id/dialog_ok_btn"
+            style="@style/MessageDialog.Button.Ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

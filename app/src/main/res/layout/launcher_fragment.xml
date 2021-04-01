@@ -1,0 +1,289 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_9" />
+
+
+    <ImageView
+        android:id="@+id/image_test"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@color/_FFFFFF"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height_4" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/bonus_accumulation_or_make_payment_btn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/logo"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="დაგროვება/დახარჯვა"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/campaign_management_action_btn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage1"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/logo"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/action_buying_and_balance"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage1"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    <!-- <ge.unicard.pos.ui.widgets.CButton
+        android:id="@+id/buying_and_balance_action_btn"
+        style="@style/Launcher.ActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@mipmap/tm"
+        android:gravity="start|center_vertical"
+        android:text="@string/action_campaign_management"
+        android:textAllCaps="true"
+        tools:background="@color/green" /> -->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/buying_and_balance_action_btn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage2"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/tm"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/action_campaign_management"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage2"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/close_action_btn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage4"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/sett"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/action_close"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage4"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/register_new_user"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage6"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/register_new_user"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/action_mrz"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage6"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/reports_action_btn"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/firstimage5"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/graph"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintStart_toStartOf="parent"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/action_reports"
+            android:fontFamily="@font/bpg_dejavu_sans_caps"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            fancy:layout_constraintBottom_toBottomOf="parent"
+            fancy:layout_constraintEnd_toEndOf="parent"
+            fancy:layout_constraintStart_toEndOf="@+id/firstimage5"
+            fancy:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+
+</ScrollView>

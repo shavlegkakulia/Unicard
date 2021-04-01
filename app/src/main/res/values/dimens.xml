@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">46dp</dimen>
+    <dimen name="divider_height_9">9dp</dimen>
+    <dimen name="divider_height_4">4dp</dimen>
+    <dimen name="banner_height">116dp</dimen>
+    <dimen name="divider_height_7">7dp</dimen>
+    <dimen name="dialog_corner_radius">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

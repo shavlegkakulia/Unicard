@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/dummy_focusable_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp">
+
+      <!--  <ge.unicard.pos.ui.widgets.CEditText
+            android:id="@+id/search_input_report"
+            style="@style/Transactions.Search.Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/action_reports" />
+
+        <ge.unicard.pos.ui.widgets.CImageButton
+            android:id="@+id/search_btn_report"
+            style="@style/Transactions.Search.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            app:srcCompat="@drawable/ic_search" /> -->
+
+        <Button
+            android:id="@+id/btn_print_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="X რეპორტი"
+            android:textColor="@color/_FFFFFF"/>
+
+    </FrameLayout>
+
+   <!-- <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp" /> -->
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearTransactionsAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

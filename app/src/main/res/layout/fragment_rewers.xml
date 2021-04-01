@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/_FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="41dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp">
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            style="@style/CloseDialog.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ნამდვილად გსურთ ტრანზაქციის დარევერსება?" />
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            android:id="@+id/rewers_dialog_description"
+            style="@style/CloseDialog.Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:text="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ge.unicard.pos.ui.widgets.CButton
+            android:id="@+id/rewers_dialog_yes"
+            style="@style/CloseDialog.Button.Yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_yes" />
+
+        <ge.unicard.pos.ui.widgets.CButton
+            android:id="@+id/rewers_dialog_no"
+            style="@style/CloseDialog.Button.No"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_no" />
+
+    </LinearLayout>
+
+</LinearLayout>

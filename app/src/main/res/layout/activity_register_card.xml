@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.register_new_user.RegisterCardActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/toolbar3"
+        android:background="@color/_707070"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/back4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/toolbar_register_client"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/_FFFFFF"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageView
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/logo"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ge.unicard.pos.ui.widgets.CTextInputLayout
+            android:id="@+id/input_layout"
+            style="@style/BonusAccumulationOrMakePayment.InputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+
+            <ge.unicard.pos.ui.widgets.CTextInputEditText
+                android:id="@+id/register_card_scan_input"
+                style="@style/BonusAccumulationOrMakePayment.Input.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card" />
+
+        </ge.unicard.pos.ui.widgets.CTextInputLayout>
+
+        <!-- <TextView
+             android:id="@+id/name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:text="Name"/>
+         <TextView
+             android:id="@+id/last_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:text="Last name"/>
+         <TextView
+             android:id="@+id/doc_number"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:text="Document number"/>
+         <TextView
+             android:id="@+id/date_birth"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:text="Date birth"/>
+         <TextView
+             android:id="@+id/country_citizen"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:text="Country citizen"/> -->
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/open_card_scan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/register_card_back"
+            android:background="@color/_FFFFFF"
+            android:textColor="@color/_707070"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/register_mrz_scan_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+       <!-- <Button
+            android:layout_weight="1"
+            android:id="@+id/register_card_forward"
+            android:background="@color/green"
+            android:textColor="@color/_FFFFFF"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/register_mrz_scan_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/_FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:paddingEnd="13dp"
+        android:paddingStart="13dp">
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            android:id="@+id/toolbar_title_view"
+            style="@style/AppTheme.Widget.TextView.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:text="Device Config"
+            android:textColor="@color/_337191" />
+
+        <ge.unicard.pos.ui.widgets.CImageButton
+            android:id="@+id/toolbar_action_btn2"
+            style="@style/AppTheme.Widget.ImageButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="end|center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/ic_close" />
+     <!--   <ge.unicard.pos.ui.widgets.CImageButton
+            android:id="@+id/toolbar_action_btn3"
+            style="@style/AppTheme.Widget.ImageButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="start|center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/settings2" /> -->
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/list_divider_28"
+        android:footerDividersEnabled="true"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/_707070" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/Transactions.Header.Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        android:paddingTop="7dp">
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            android:id="@+id/transaction_date_time"
+            style="@style/Transactions.Header.Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25.10.18" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ge.unicard.pos.ui.widgets.CTextView
+            android:id="@+id/transaction_status"
+            style="@style/Transactions.Header.Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="წარმატებული" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/transaction_id"
+                style="@style/Transactions.Item.Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                tools:text="11992229" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/transaction_amount"
+                style="@style/Transactions.Item.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bpg_dejavu_sans_caps"
+                android:gravity="end"
+                tools:text="80.50 GEL" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="15dp">
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/transaction_description"
+                style="@style/Transactions.Item.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                tools:text="დაგროვებულია 20 ქულა" />
+
+            <ge.unicard.pos.ui.widgets.CTextView
+                android:id="@+id/transaction_date"
+                style="@style/Transactions.Item.Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                tools:text="12:00" />
+
+        </TableRow>
+
+   <!--     <TableRow android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:src="@mipmap/print_again"
+                android:id="@+id/btn_revers"/>
+
+            <ImageView
+                android:id="@+id/btn_print_again"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/print_again" />
+
+
+
+        </TableRow> -->
+
+    </TableLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_revers"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@mipmap/revers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/btn_print_again"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@mipmap/print_again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

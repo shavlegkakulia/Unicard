@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Transactions.Header.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="7dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
+    android:paddingTop="7dp">
+
+    <ge.unicard.pos.ui.widgets.CTextView
+        android:id="@+id/transaction_date"
+        style="@style/Transactions.Header.Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25.10.18" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ge.unicard.pos.ui.widgets.CTextView
+        android:id="@+id/transaction_status"
+        style="@style/Transactions.Header.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="წარმატებული" />
+
+</LinearLayout>

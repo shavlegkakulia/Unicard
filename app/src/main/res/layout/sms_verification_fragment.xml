@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/input_box_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ge.unicard.pos.ui.widgets.CEditText
+            android:id="@+id/input_box_1"
+            style="@style/SmsVerification.InputBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ge.unicard.pos.ui.widgets.CEditText
+            android:id="@+id/input_box_2"
+            style="@style/SmsVerification.InputBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ge.unicard.pos.ui.widgets.CEditText
+            android:id="@+id/input_box_3"
+            style="@style/SmsVerification.InputBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ge.unicard.pos.ui.widgets.CEditText
+            android:id="@+id/input_box_4"
+            style="@style/SmsVerification.InputBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0" />
+
+    </LinearLayout>
+
+    <ge.unicard.pos.ui.widgets.CButton
+        android:id="@+id/verify_btn"
+        style="@style/SmsVerification.VerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="@string/finish"
+        android:textAllCaps="true" />
+
+    <ge.unicard.pos.ui.widgets.CButton
+        android:id="@+id/resend_code_btn"
+        style="@style/SmsVerification.Resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="38dp"
+        android:text="@string/resend_verification_code" />
+
+    <ge.unicard.pos.ui.widgets.CTextView
+        android:id="@+id/timer_view"
+        style="@style/SmsVerification.Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/timer_default" />
+
+</LinearLayout>

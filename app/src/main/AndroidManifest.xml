@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ge.unicard.pos">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".presentation.register_new_user.RegisterMRZActivity" />
+        <activity android:name=".presentation.ReadPNActivity" />
+        <activity
+            android:name=".presentation.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.MrzActivity"
+            android:label="@string/title_activity_mrz"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".presentation.launcher.LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEFAULT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+
+                <action android:name="android.intent.action.PAY_APP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.common.ActionListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.paying.PayingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.send_otp.SendOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.transactions.TransactionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.cards.CardsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.report_action.ActionReportActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="unicardbank.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="ge.unicard.pos" />
+
+        <activity android:name=".presentation.reward.RewardEnterActivity" />
+        <activity
+            android:name=".presentation.reward.list_rewards.RewardsListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".presentation.reward_preview.RewardPreviewActivity" />
+        <activity android:name=".presentation.send_mrz.SendMRZActivity" />
+        <activity android:name=".presentation.register_new_user.RegisterNFSActivity" />
+        <activity android:name=".presentation.register_new_user.RegisterCardActivity" />
+        <activity android:name=".presentation.register_new_user.RegisterPhoneActivity" />
+        <activity android:name=".presentation.register_new_user.RegisterUserSuccessActivity"></activity>
+
+    </application>
+
+</manifest>

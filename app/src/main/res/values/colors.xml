@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="_497FA1">#497FA1</color>
+    <color name="_FFFFFF">#ffffff</color>
+    <color name="_C76654">#c76654</color>
+    <color name="_000000">#000000</color>
+    <color name="_333333">#333333</color>
+    <color name="_969696">#969696</color>
+    <color name="_388784">#388784</color>
+    <color name="_337191">#337191</color>
+    <color name="_7FADC5">#7fadc5</color>
+    <color name="_939393">#939393</color>
+    <color name="_485A68">#485a68</color>
+    <color name="_B7C8D4">#b7c8d4</color>
+    <color name="_707070">#707070</color>
+    <color name="_9393930">#939393</color>
+    <color name="_FFC600">#ffc600</color>
+    <color name="_FF7600">#ff7600</color>
+    <color name="_FF0000">#ff0000</color>
+    <color name="_8FC74A">#8fc74a</color>
+    <color name="_FEC32B">#fec32b</color>
+    <color name="_F79633_35">#f7ce9b</color>
+    <color name="_00AB8A">#00ab8a</color>
+    <color name="_7A46B5">#7a46b5</color>
+    <color name="_8E82EB">#8e82eb</color>
+    <color name="_F08930">#f08930</color>
+
+
+    <color name="green">#90c84d</color>
+    <color name="yellow">#fdc215</color>
+    <color name="orange">#f89520</color>
+    <color name="red">#f75820</color>
+    <color name="grey">#707070</color>
+
+
+</resources>

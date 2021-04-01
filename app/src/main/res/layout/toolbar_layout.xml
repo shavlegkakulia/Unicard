@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="?toolbarColor"
+    android:orientation="horizontal"
+    tools:background="@color/_497FA1">
+
+    <ge.unicard.pos.ui.widgets.CImageButton
+        android:id="@+id/toolbar_action_btn1"
+        style="@style/AppTheme.Widget.ImageButton.NoPadding"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="start|center_vertical"
+        android:scaleType="center"
+        tools:src="@drawable/ic_info" />
+
+    <ge.unicard.pos.ui.widgets.CTextView
+        android:id="@+id/toolbar_title_view"
+        style="@style/AppTheme.Widget.TextView.15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/_FFFFFF"
+        tools:text="Title" />
+
+    <ge.unicard.pos.ui.widgets.CImageButton
+        android:id="@+id/toolbar_action_btn2"
+        style="@style/AppTheme.Widget.ImageButton.NoPadding"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_marginRight="5dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_gravity="end|center_vertical"
+        android:scaleType="center"
+        tools:src="@drawable/ic_info" />
+
+</LinearLayout>

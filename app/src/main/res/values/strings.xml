@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Uni POS</string>
+    <string name="unicard_merchant_app">ID: </string>
+    <string name="unicard">Unicard</string>
+    <string name="paying">გადახდა</string>
+    <string name="scan_qr">Scan Qr</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="card"><![CDATA[ ბარათი]]></string>
+    <string name="amount">თანხა</string>
+    <string name="paying_submit">გადახდა</string>
+    <string name="finish">დასრულება</string>
+    <string name="resend_verification_code">კოდის თავიდან გამოგზავნა</string>
+    <string name="timer_default">00:00</string>
+    <string name="operations">ოპერაციები</string>
+    <string name="search_transaction_hint">მოძებნეთ ტრანზაქცია</string>
+    <string name="dialog_yes">დიახ</string>
+    <string name="dialog_no">არა</string>
+    <string name="close_dialog_title">ნამდვილად გსურთ დღის დახურვა?</string>
+    <string name="configuration">მონაცემები</string>
+    <string name="action_save_and_spend"> დაგროვება\\გადახდა</string>
+    <string name="action_buying_and_balance">კამპანიები</string>
+    <string name="action_campaign_management">სასაჩუქრე ბარათი</string>
+    <string name="action_close">დღის დახურვა</string>
+    <string name="action_reports">რეპორტები</string>
+    <string name="action_mrz">კლიენტის რეგისტრაცია</string>
+    <string name="fs_with_qr_code">%s შტრიხკოდით</string>
+    <string name="fs_with_card">%s მაგნიტური ზოლით</string>
+    <string name="action_bonus_accumulation">ქულების დაგროვება</string>
+    <string name="action_make_payment">ქულებით გადახდა</string>
+    <string name="action_operations">ოპერაციების ისტორია</string>
+
+    <string name="scanner_content">Scan code content</string>
+    <string name="scanner_timeout">Scan code overtime</string>
+    <string name="scanner_customer_exit">customer exit</string>
+    <string name="scanner_fail">Scan code fail</string>
+    <string name="scanner_start_error">start fail</string>
+    <string name="scanner_init_error">init fail</string>
+
+    <string name="swip_again">swipe again</string>
+    <string name="search_toomany_cards">search too many cards</string>
+    <string name="prompt_swipe_card">მოათავსეთ ბარათი წამკითხველში</string>
+    <string name="please_wait">გთხოვთ დაელოდოთ...</string>
+    <string name="filed_is_empty">ველი ცარიელია</string>
+    <string name="amount_filed_is_empty">მიუთითეთ თანხა</string>
+    <string name="card_filed_is_empty">ბარათი არ არის არჩეული</string>
+    <string name="dialog_ok">დახურვა</string>
+    <string name="error_message_dialog_title">შეცდომა</string>
+    <string name="no_internet_connection_msg">არ არის ინტერნეტი</string>
+    <string name="action_purchase">შესყიდვა</string>
+    <string name="action_balance">ბალანსი</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="print_layout_terminal_id">ტერმინალი Id</string>
+    <string name="print_layout_merchant_id">ობიექტის Id</string>
+    <string name="print_layout_receipt">ქვითრის #</string>
+    <string name="print_layout_paid">Paid~~:</string>
+    <string name="print_layout_amount">თანხა</string>
+    <string name="print_layout_points">ქულა</string>
+    <string name="dummy_dashes">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</string>
+    <string name="print_layout_card">ბარათი</string>
+    <string name="print_layout_resp_code">პასუხის კოდი</string>
+    <string name="print_layout_date">დრო</string>
+    <string name="print_layout_footer">გმადლობთ!</string>
+    <string name="information_message_dialog_title">ინფორმაცია</string>
+    <string name="day_close_formated_d">სულ %d ტრანზაქცია</string>
+
+    <string name="print_layout_paid_accomularion">ქულების დაგროვება</string>
+    <string name="print_layout_paid_make_payment">ქულებით გადახდა</string>
+    <string name="print_layout_paid_purchase">სასაჩუქრე ბარათით</string>
+
+    <string name="reward_dialog_text">თქვენ მოხვდით იღბლიანთა შორის და
+გეკუთვნით საჩუქარი!</string>
+    <string name="reward_happy">გილოცავთ!</string>
+
+
+    <!--for check Phone and Reward-->
+    <string name="title_check_phone_and_rewards">შეტყობინება</string>
+    <string name="check_phone">შეიყვანეთ ბარათის მფლობელის მობილური ნომერი</string>
+    <string name="check_rewards">ბარათის მფლობელს ეკუთვნის საჩუქარი. გსუურთ იხილოთ დეტალები?</string>
+    <string name="title_activity_mrz">MrzActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+    <string name="given_name">Given Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="doc_type">Document Type:</string>
+    <string name="subType">Sub Type:</string>
+    <string name="issuing_state">Issuing Country:</string>
+    <string name="doc_number">Document Number:</string>
+    <string name="nationality">Nationality:</string>
+    <string name="gender">Gender:</string>
+    <string name="expiration">Expiration Date:</string>
+    <string name="personal_number">Personal Number:</string>
+    <string name="optional">Optional Data:</string>
+    <string name="birthdate">Birth Date:</string>
+    <string name="rawMrz">Raw MRZ:</string>
+
+    <string name="how_to">Tips &amp; Tricks</string>
+    <string name="contact">Contact</string>
+
+
+    // add KA
+    <string name="register_mrz_scan_back">უკან</string>
+    <string name="register_mrz_scan_forgot">დასკანერება</string>
+
+    <string name="description_mrz_scan">დაასკანერეთ ID ბარათის უკანა მხარე</string>
+    <string name="toolbar_register_client">კლიენტის რეგისტრაცია</string>
+
+    <!--Contact information-->
+    <string name="toBuy"><b>To Buy</b></string>
+    <string name="moreInfo"><b>More Info</b></string>
+    <string name="rateUs"><b>Rate Us!</b></string>
+    <string name="clickRate">Click Here to Rate</string>
+    <string name="email">Interested in having Xavier in your app? Email us at info@blacksharktech.com for pricing and license inquiries</string>
+    <string name="website">Visit our website at <a href="http://www.blacksharktech.com">blacksharktech.com</a></string>
+    <string name="disclaimer">Disclaimer: We do not send your data anywhere</string>
+    <string name="rate">Enjoying our app? Rate us on the Google Play store!</string>
+
+    <string name="scanningProblems"><b><u>Having trouble scanning?</u></b></string>
+    <string name="mrzLocation">&#8226; Make sure the MRZ is within the frame. The MRZ is on the bottom of Passports and Visas, and on the back of cards such as the
+        Enhanced Driver\'s License or a U.S Permanent Resident Card.</string>
+    <string name="documentCentered">&#8226; Make sure the document is centered within the bounds of the box</string>
+    <string name="reduceGlare">&#8226; Reduce glare on your document by angling the document or blocking the offending light source</string>
+    <string name="dimLighting">&#8226; In dim lighting, enable the flashlight using the icon in the top right of the scanner screen</string>
+    <string name="moveDocument">&#8226; Move your document slowly in and out</string>
+    <string name="landscapeMode">&#8226; Try landscape mode</string>
+    <string name="moveHand">&#8226; Make sure your hand doesn\'t cover text on the document</string>
+
+</resources>
