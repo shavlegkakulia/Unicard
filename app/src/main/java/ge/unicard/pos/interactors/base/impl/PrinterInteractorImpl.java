@@ -261,7 +261,7 @@ public class PrinterInteractorImpl
         viewHolder.typeCard.setText("GIFTCARD");
 
         viewHolder.imageLogoCheck.setImageResource(R.mipmap.logoprint_tm);
-        viewHolder.logoText.setText("TBILISI MALL");
+        viewHolder.logoText.setText("MISA HOME");
 
         viewHolder.orgNameView.setText(Objects.toString(purchaseResponse.merchName, "-"));
         viewHolder.addressView.setText(Objects.toString(purchaseResponse.address, "-"));
@@ -400,7 +400,7 @@ public class PrinterInteractorImpl
         if(rewersResponse.typeTransactionIDw == 2){
             viewHolder.linearLayoutBonus.setVisibility(View.GONE);
             viewHolder.imageLogoCheck.setImageResource(R.mipmap.logoprint_tm);
-            viewHolder.logoText.setText("TBILISI MALL");
+            viewHolder.logoText.setText("MISA HOME");
         }
         else {
             viewHolder.pointsView.setText(Objects.toString(rewersResponse.bonus, "-"));
