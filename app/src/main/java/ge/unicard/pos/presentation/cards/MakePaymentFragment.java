@@ -47,7 +47,7 @@ public class MakePaymentFragment extends CardsFragment {
     }
 
     protected String getActionLabel() {
-        return return getString(R.string.action_make_payment);
+        return getString(R.string.action_make_payment);
     }
 
     @Override

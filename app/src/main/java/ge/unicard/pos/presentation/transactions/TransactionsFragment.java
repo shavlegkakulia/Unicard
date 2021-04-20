@@ -175,12 +175,16 @@ public class TransactionsFragment
                 statusView = view1.findViewById(R.id.transaction_status);
                 btnPrintAgain = view1.findViewById(R.id.btn_print_again);
                 btnRevers = view1.findViewById(R.id.btn_revers);
-                String[] words = generalModel.getTranDate().split(" ");
+                String[] words = new String[]{};
+                if(generalModel.getTranDate() != null)
+                    generalModel.getTranDate().split(" ");
 
                 idView.setText(String.valueOf(generalModel.getCard()));
                 statusView.setText(generalModel.getStatus().equals("Reversed") ? "გაუქმებული" : "დადასტურებული");
-                dateTimeView.setText(words[0]);
-                timeView.setText(words[1]);
+                if(words.length > 0)
+                    dateTimeView.setText(words[0]);
+                if(words.length > 1)
+                    timeView.setText(words[1]);
                 amountView.setText(generalModel.getAmount() + " GEL");
                 if (generalModel.getType() == TYPE_BONUS_ACCUMULATION) {
                     descriptionView.setText("დაგროვებული");
