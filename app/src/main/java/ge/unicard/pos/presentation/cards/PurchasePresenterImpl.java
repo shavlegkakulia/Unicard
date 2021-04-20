@@ -59,9 +59,9 @@ public class PurchasePresenterImpl extends CardsPresenter
     @Override
     public void onScanQrButtonClicked() {
 
-        //super.onScanQrButtonClicked();
-        //if (getView() != null) {
-            //getView().onEnableSubmitButton(false);}
+        super.onScanQrButtonClicked();
+        if (getView() != null) {
+            getView().onEnableSubmitButton(false);}
     }
 
     @Override

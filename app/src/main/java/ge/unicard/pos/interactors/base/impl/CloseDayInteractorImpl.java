@@ -65,34 +65,47 @@ public class CloseDayInteractorImpl  extends ApiServicesInteractor implements Cl
         for(int i =0;i< listCloseDay.size();i++){
             if(listCloseDay.get(i).type == 0) {
                 // TYPE_BONUS_ACCUMULATION
+                GeneralModel dr = listCloseDay.get(i);
+                if(dr.amount == null) {
+                    dr.amount = "0";
+                }
                 if (!listCloseDay.get(i).status.equals("Reversed")) {
                     countTransactionBonusAccomulation++;
-                    amountBonusAccomulation += Double.parseDouble(listCloseDay.get(i).amount);
+
+                    amountBonusAccomulation += Double.parseDouble(dr.amount);
                 } else if (listCloseDay.get(i).status.equals("Reversed")) {
                     countRewersBonusAccomulation++;
-                    reverstBonusAccomulation += Double.parseDouble(listCloseDay.get(i).amount);
+                    reverstBonusAccomulation += Double.parseDouble(dr.amount);
                 }
             }
             else  if(listCloseDay.get(i).type == 1){
                 // TYPE_MALE_PAYMENT
+                GeneralModel dr = listCloseDay.get(i);
+                if(dr.amount == null) {
+                    dr.amount = "0";
+                }
                 if (!listCloseDay.get(i).status.equals("Reversed")) {
                     countTransactionMakePayment++;
-                    amountMakePayment +=Double.parseDouble(listCloseDay.get(i).amount);
+                    amountMakePayment +=Double.parseDouble(dr.amount);
                 }
                 else if (listCloseDay.get(i).status.equals("Reversed")) {
                     countRewersMakePayment++;
-                    reverstMakePayment +=Double.parseDouble(listCloseDay.get(i).amount);
+                    reverstMakePayment +=Double.parseDouble(dr.amount);
                 }
             }
             else  if(listCloseDay.get(i).type == 2 ){
                 // TYPE_PURCHASE
+                GeneralModel dr = listCloseDay.get(i);
+                if(dr.amount == null) {
+                    dr.amount = "0";
+                }
                 if (!listCloseDay.get(i).status.equals("Reversed")) {
                     countTransactionPurchase++;
-                    amountPurchase +=Double.parseDouble(listCloseDay.get(i).amount);
+                    amountPurchase +=Double.parseDouble(dr.amount);
                 }
                 else if (listCloseDay.get(i).status.equals("Reversed")) {
                     countRewersPurchase++;
-                    reverstPurchase +=Double.parseDouble(listCloseDay.get(i).amount);
+                    reverstPurchase +=Double.parseDouble(dr.amount);
                 }
             }
             else {

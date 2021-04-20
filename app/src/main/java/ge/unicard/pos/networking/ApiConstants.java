@@ -32,22 +32,23 @@ public final class ApiConstants {
     */
 
 
-   // public static final String SERVER_ENDPOINT = "http://192.168.5.80:8047/";
 
-    public static final String SERVER_ENDPOINT = "http://unipos.unicard.ge:9000/";
 
-    public static final String METHOD_GET_ACCOUNT_INF = "UniProcessingPrivate.UniPosSVC.svc/GetAccountInfo";
-    public static final String METHOD_BONUS_ACCUMULATION = "UniProcessingPrivate.UniPosSVC.svc/BonusAccumulation";
-    public static final String METHOD_MAKE_PAYMENT = "UniProcessingPrivate.UniPosSVC.svc/MakePayment";
-    public static final String METHOD_SEND_OTP = "UniProcessingPrivate.UniPosSVC.svc/SendOtp";
-    public static final String METHOD_GET_BALANCE= "UniProcessingPrivate.UniPosSVC.svc/GetBalance";
-    public static final String METHOD_PURCHASE= "UniProcessingPrivate.UniPosSVC.svc/Purchase";
+    public static final String SERVER_ENDPOINT = "http://109.238.238.197:5000/"; //http://unipos.unicard.ge:9000/
+    public static final String NEW_SERVER_ENDPOINT = "http://10.5.155.71:8065/";
+
+    public static final String METHOD_GET_ACCOUNT_INF = "api/Bonus/GetAccountInfo"; //UniProcessingPrivate.UniPosSVC.svc/GetAccountInfo
+    public static final String METHOD_BONUS_ACCUMULATION = "api/Bonus/BonusAccumulation"; // UniProcessingPrivate.UniPosSVC.svc/BonusAccumulation
+    public static final String METHOD_MAKE_PAYMENT = "api/Bonus/MakePayment"; // UniProcessingPrivate.UniPosSVC.svc/MakePayment
+    public static final String METHOD_SEND_OTP = "api/Bonus/SendOtp"; //UniProcessingPrivate.UniPosSVC.svc/SendOtp
+    public static final String METHOD_GET_BALANCE= "api/Bonus/GetBalance"; //UniProcessingPrivate.UniPosSVC.svc/GetBalance
+    public static final String METHOD_PURCHASE= "api/Bonus/Purchase"; //UniProcessingPrivate.UniPosSVC.svc/Purchase
     public static final String METHOD_CLOSE_DAY = "UniProcessingPrivate.UniPosSVC.svc/CloseDay";
 
     public static final String METHOD_GET_REWARD_LIST = "UniProcessingPrivate.UniPosSVC.svc/GetRewardList";
     public static final String METHOD_REWARD_REALIZE = "UniProcessingPrivate.UniPosSVC.svc/RewardRealize";
 
-    public static final String METHOD_GET_DEVICE_INFO = "UniProcessingPrivate.UniPosSVC.svc/GetDeviceInfo"; // +"?" + date.toString()
+    public static final String METHOD_GET_DEVICE_INFO = "api/Bonus/GetDeviceInfo"; //UniProcessingPrivate.UniPosSVC.svc/GetDeviceInfo // +"?" + date.toString()
 
     public static final String METHOD_ALL_DATABASE = "UniProcessingPrivate.UniPosSVC.svc/AddMerchantsBatchData";
 
@@ -56,8 +57,8 @@ public final class ApiConstants {
     public static final String METHOD_REGISTER_NEW_CUSTOMER = "UniProcessingPrivate.UniPosSVC.svc/RegisterNewCustomer";
 
     // for check number phone
-    public static final String METHOD_CHECK_PHONE = "UniProcessingPrivate.UniPosSVC.svc/CheckPhone";
-    public static final String METHOD_SUBMIT_PHONE = "UniProcessingPrivate.UniPosSVC.svc/SubmitPhone";
+    public static final String METHOD_CHECK_PHONE = "api/Bonus/CheckPhone"; //UniProcessingPrivate.UniPosSVC.svc/CheckPhone
+    public static final String METHOD_SUBMIT_PHONE = "api/Bonus/SubmitPhone"; // UniProcessingPrivate.UniPosSVC.svc/SubmitPhone
 
     public static final String SOURCE_MOBAPP = "MOBAPP";
 

@@ -31,6 +31,7 @@ import com.github.javiersantos.appupdater.objects.Update;
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -113,8 +114,8 @@ public class LauncherFragment
    /* @BindView(R.id.mrz_btn)
     ConstraintLayout mrzButton;*/
 
-    @BindView(R.id.campaign_management_action_btn)
-    ConstraintLayout btnCampainManagment;
+   /* @BindView(R.id.campaign_management_action_btn)
+    ConstraintLayout btnCampainManagment;*/
 
     @BindView(R.id.close_action_btn)
     ConstraintLayout btnCloseDay;
@@ -122,8 +123,8 @@ public class LauncherFragment
     @BindView(R.id.reports_action_btn)
     ConstraintLayout btnReportsTransaction;
 
-    @BindView(R.id.register_new_user)
-    ConstraintLayout registrationNewUser;
+    //@BindView(R.id.register_new_user)
+    //ConstraintLayout registrationNewUser;
 
     @BindView(R.id.image_test)
     ImageView imageGif;
@@ -192,6 +193,8 @@ public class LauncherFragment
                                     if (input.getText().toString().equals("2107")) {
                                         startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
 
+                                    } else if(input.getText().toString().equals("2108")) {
+                                       // startActivityForResult(new Intent("com.android.chrome"), 0);
                                     }
                                     dialog.cancel();
                                 });
@@ -229,22 +232,22 @@ public class LauncherFragment
 
     }
 
-    @OnClick({R.id.register_new_user})
+   /* @OnClick({R.id.register_new_user})
     void onMrzClicked(View view) {
         // open screen for MRZ data or MRZ scanner
-       /* Intent i = new Intent(getContext(), MrzActivity.class);
-        startActivity(i); */
+       // Intent i = new Intent(getContext(), MrzActivity.class);
+      //  startActivity(i);
 
         RegisterHelper registerHelper = new RegisterHelper(CR_ScanMRZ, CR_ScanMyFare, CR_ReceivePhone, CR_SwipeCard, view.getContext());
         registerHelper.filterActivitiesRegNewCustomer();
         //Intent i = new Intent(getContext(), RegisterMRZActivity.class);
        // startActivity(i);
-    }
+    }*/
 
     @OnClick({
             R.id.bonus_accumulation_or_make_payment_btn,
             R.id.buying_and_balance_action_btn,
-            R.id.campaign_management_action_btn,
+          //  R.id.campaign_management_action_btn,
             R.id.close_action_btn,
             R.id.reports_action_btn
     })
@@ -256,9 +259,9 @@ public class LauncherFragment
             case R.id.buying_and_balance_action_btn:
                 getPresenter().onBuyingAndBalanceActionButtonClick();
                 break;
-            case R.id.campaign_management_action_btn:
+         /*   case R.id.campaign_management_action_btn:
                 getPresenter().onCampaignManagementActionButtonClick();
-                break;
+                break;*/
             case R.id.close_action_btn:
                 getPresenter().onCloseActionButtonClick();
                 break;
@@ -289,7 +292,7 @@ public class LauncherFragment
                 .load(responce.getBannerURL() + "?" + date.toString())
                 .into(imageGif);
 
-
+/*
         for (int i = 0; i < typeFunctionBtnList.size(); i++) {
             if (typeFunctionBtnList.get(i).getResourcename().equals("Unicard")) {
                 countUnicard++;
@@ -369,7 +372,7 @@ public class LauncherFragment
             registrationNewUser.setVisibility(View.GONE);
         }
 
-
+*/
         if (responce.getDefaultPage().equals(ARG_BonusAccumulation)) {
             numColor = 3;
             Intent myIntent = new Intent(getActivity(), CardsActivity.class);
@@ -484,8 +487,8 @@ public class LauncherFragment
         }
 
         startActivity(ActionListActivity.buildIntent(
-                requireContext(), actionItemList
-                /*Arrays.asList(
+                requireContext(),
+                Arrays.asList(
                         new ActionItem(getString(R.string.action_bonus_accumulation),
                                 ContextCompat.getColor(requireContext(), R.color.green),
                                 CardsActivity.buildIntent(
@@ -502,7 +505,7 @@ public class LauncherFragment
                                 ContextCompat.getColor(requireContext(), R.color.orange),
                                 new Intent(requireContext(), TransactionsActivity.class),
                                 null, 0, R.mipmap.history)
-                )*/, R.style.PageTheme_DarkGreen));
+                ), R.style.PageTheme_DarkGreen));
     }
 
     @Override
@@ -548,8 +551,8 @@ public class LauncherFragment
 
 
         startActivity(ActionListActivity.buildIntent(
-                requireContext(), actionItemList
-                /*Arrays.asList(
+                requireContext(),
+                Arrays.asList(
                         new ActionItem(getString(R.string.action_purchase),
                                 ContextCompat.getColor(requireContext(), R.color._497FA1),
                                 CardsActivity.buildIntent(
@@ -564,7 +567,7 @@ public class LauncherFragment
                                 null, 0,  R.mipmap.purchase),
                         new ActionItem("ოპერაციები",   ContextCompat.getColor(requireContext(), R.color._8E82EB),
                                 new Intent(requireContext(), TransactionsActivity.class), null, 0,R.mipmap.history)
-                )*/, R.style.PageTheme_Blue));
+                ), R.style.PageTheme_Blue));
     }
 
     @Override

@@ -27,7 +27,8 @@ public class GetDeviceInfoInteractorImpl extends ApiServicesInteractor implement
         final GetDeviceInfoRequest request = new GetDeviceInfoRequest();
         request.deviceId = testDeviceID;
 
-        getServices().getDeviceInfo(request).enqueue(new GeneralApiCallback<GetDeviceInfoResponce,  String, GetDeviceInfoMapper>() {
+        getServices().getDeviceInfo(request)
+                .enqueue(new GeneralApiCallback<GetDeviceInfoResponce,  String, GetDeviceInfoMapper>() {
             @Override
             public void onMappingSuccess(String result) {
                 //callback.onStatusReceived(result);

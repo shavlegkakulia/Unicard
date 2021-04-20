@@ -35,7 +35,7 @@ import ge.unicard.pos.networking.messaging.submit_phone.SubmitPhoneResponse;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
-
+import retrofit2.http.Headers;
 public interface ApiServices {
 
 
@@ -72,6 +72,7 @@ public interface ApiServices {
 
     @POST(ApiConstants.METHOD_BONUS_ACCUMULATION)
     Call<BonusAccumulationResponse> rewersTest(@Body BonusAccumulationRequest request);
+
 
     @POST(ApiConstants.METHOD_GET_DEVICE_INFO )
     Call<GetDeviceInfoResponce>  getDeviceInfo(@Body GetDeviceInfoRequest request);

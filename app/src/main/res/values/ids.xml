@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="filed_is_empty" type="id">ველი ცარიელია</item>
+    <item name="filed_is_empty" type="id" />
 </resources>

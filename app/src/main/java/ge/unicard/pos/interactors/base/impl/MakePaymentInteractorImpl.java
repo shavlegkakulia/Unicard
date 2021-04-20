@@ -70,6 +70,7 @@ public class MakePaymentInteractorImpl
         Gson gson = new Gson();
 
         Log.d("request_request",gson.toJson(req));
+
         getServices().makePayment(req).enqueue(
                 new GeneralApiCallback<MakePaymentResponse, String,
                         MakePaymentMapper>(callback, new MakePaymentMapper()) {
